@@ -17,7 +17,7 @@ public class DriverManager {
                 System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver");
             }
         ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--headless=new");
+        options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-gpu");
